@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe Book</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-wEmeIV1m69WTNmT4mVypA/j+r4ZOyZ5Y8OI8z5lF9VQz4jRP2x1C3fX6JiM6gDg4"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Recipe Book</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                (click)="onSelect('recipe')"
+                >Recipes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" (click)="onSelect('shopping-list')"
+                >Shopping List</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" (click)="onSelect('another')"
+                >Another Component</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown" appDropdown #r="appDropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Manage
+              </a>
+              <ul
+                [ngClass]="{ show: r.isOpen }"
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdown"
+              >
+                <li><a class="dropdown-item" href="#">Save Data</a></li>
+                <li><a class="dropdown-item" href="#">Fetch Data</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pzjw8f+ua7Kw1TIq0v8Fqgjc1C3UQ6KJlFv7bO22TcfJ+TgubqqRxjrvd+Ry/qmH"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

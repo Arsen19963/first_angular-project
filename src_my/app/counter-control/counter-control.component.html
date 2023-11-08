@@ -1,0 +1,17 @@
+<div>
+  <p>{{ counter }}</p>
+  <div class="row">
+    <div class="col_xs-12">
+      <button class="btn btn-primary" (click)="increment()">Increment</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col_xs-12">
+      <button class="btn btn-success" (click)="decrement()">Decrement</button>
+    </div>
+  </div>
+
+  <app-decrement (decrementEvent)="onDecrement($event)"></app-decrement>
+  <app-increment (incrementEvent)="onIncrement($event)"></app-increment>
+
+</div>

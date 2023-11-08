@@ -1,27 +1,14 @@
-# MyFirstProject
+**Counter App!**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
+1. Create three new components: `CounterControl`, `Increment`, and `Decrement`.  
+2. The `CounterControl` Component should have two buttons: "Increment" and "Decrement".
+3. The `CounterControl` Component should also display the current counter value, which starts from 0.
+4. When the "Increment" button is clicked, an event should be emitted to increase the counter by 1. This should be reflected in the `Increment` component which displays the message "Incremented to - NUMBER".
+5. When the "Decrement" button is clicked, an event should be emitted to decrease the counter by 1. This should be reflected in the `Decrement` component which displays the message "Decremented to - NUMBER".
+6. The `Increment` and `Decrement` components should also display the total number of times their respective buttons have been clicked.
+7. Style the `Increment` component to have a green background and the `Decrement` component to have a red background.
+8. Add a feature such that if the counter value becomes negative, the displayed counter value in `CounterControl` component turns red.
+9. Implement a reset button in `CounterControl` to reset the counter value to 0.
+10. Add a feature in the `CounterControl` component where the user can set a custom step value. For example, if the step is set to 5, clicking the "Increment" button will increase the counter by 5, and the "Decrement" button will decrease it by 5.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Good luck! Let me know if you need further guidance or assistance.

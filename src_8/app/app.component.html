@@ -1,0 +1,12 @@
+<app-header (loadedFeature)="onNavigate($event)"></app-header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <app-recipes *ngIf="AppLoadedFeature === 'recipe'"></app-recipes>
+      <app-shopping-list
+        *ngIf="AppLoadedFeature === 'shopping-list'"
+      ></app-shopping-list>
+      <div *ngIf="AppLoadedFeature === 'another'">Another Component</div>
+    </div>
+  </div>
+</div>
